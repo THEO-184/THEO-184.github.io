@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Theophilus Boakye Yiadom – Portfolio</title>
+<meta name="description" content="Frontend and full-stack engineer in Accra, Ghana. Selected work: Fanatics Sportsbook, Igus, IBS Consulting, Invoice Ninja, Tuka and AI tooling at Monterosa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F8; --surface:#E7ECF2; --ink:#141F2B; --muted:#4F5F70; --line:#C9D3DE; --accent:#2848D6;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1620; --surface:#18232F; --ink:#E7EDF3; --muted:#9AA9B8; --line:#2A3846; --accent:#8FA6FF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1620; --surface:#18232F; --ink:#E7EDF3; --muted:#9AA9B8; --line:#2A3846; --accent:#8FA6FF;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.6}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:56rem;margin:0 auto;padding:clamp(1.5rem,5vw,4rem) clamp(1.25rem,5vw,2.5rem) 4rem}
+header{padding-bottom:clamp(2rem,6vw,4rem);border-bottom:1px solid var(--line)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,9vw,5.5rem);line-height:.98;letter-spacing:-.035em;margin:0 0 1.25rem}
+.intro{max-width:34rem;margin:0 0 1.25rem;color:var(--muted);font-size:1.25rem}
+.links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:0;padding:0;list-style:none;font-family:var(--display);font-weight:500;font-size:1rem}
+.project{display:grid;grid-template-columns:13rem 1fr;gap:1rem 2.5rem;padding:2.25rem 0;border-bottom:1px solid var(--line)}
+.meta{font-size:.95rem;color:var(--muted)}
+.meta p{margin:0 0 .75rem}
+.meta .label{display:block;font-family:var(--display);font-weight:500;color:var(--ink);font-size:.9rem}
+.meta ul{list-style:none;margin:0;padding:0}
+.meta li{margin:0 0 .25rem}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(1.5rem,4vw,2rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 .75rem}
+.main p{margin:0 0 .85rem;max-width:38rem}
+.impact{background:var(--surface);padding:.7rem 1rem;border-radius:4px;font-size:1.02rem}
+.note{font-style:italic;color:var(--muted)}
+footer{padding-top:2rem;color:var(--muted);font-size:1rem}
+@media (max-width:42rem){
+  .project{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Theophilus Boakye Yiadom</h1>
+    <p class="intro">Frontend and full-stack engineer in Accra, Ghana. Five years building React and TypeScript products for large audiences, from live sports visualizations to e-commerce and government platforms.</p>
+    <ul class="links">
+      <li><a href="https://github.com/THEO-184" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/theophilus-boakye-yiadom-142a071a3/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:theophilusboakye47@gmail.com">theophilusboakye47@gmail.com</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <article class="project">
+      <div class="meta">
+        <p><span class="label">Stack</span>React, Next.js, TypeScript, Redux, React Three Fiber, Blender, Node.js, Express, MongoDB, WebSockets, AWS, GitLab CI/CD</p>
+        <p><span class="label">Availability</span>Only available in the Fanatics Sportsbook app in the USA.</p>
+      </div>
+      <div class="main">
+        <h2>Fanatics Sportsbook App</h2>
+        <p>Real-time 3D visualization experiences for basketball, tennis, baseball and NFL that simulate live events inside the Fanatics app. I led the frontend and full-stack work, including the WebSocket connections that stream live Sportradar and SDP data. I also led the Spin to Win game for Fanatics’ FanCash program, which was integrated with existing payment and betting services.</p>
+        <p class="impact">120k concurrent users per event. Delivered a month ahead of schedule, and the client extended its commitment from 3 to 5 years. Spin to Win served 70k concurrent users per week and processed $2.5M in revenue for the client.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="meta">
+        <p><span class="label">Stack</span>TypeScript, Next.js, Redux/Zustand, React Query, AWS, Turborepo</p>
+        <p><span class="label">Link</span><a href="https://www.igus.eu/" target="_blank" rel="noopener">igus.eu</a></p>
+      </div>
+      <div class="main">
+        <h2>Igus Webshop</h2>
+        <p>The e-commerce platform for Igus, a manufacturer of high-performance polymers for movement, based in Cologne, Germany. I refined the product listing and cart features and used user feedback to decide what to improve next.</p>
+        <p class="impact">Monthly B2B/B2C users grew from 50k to 181k, and monthly revenue from €8m to €13m.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="meta">
+        <p><span class="label">Role</span>Independent contractor</p>
+        <p><span class="label">Link</span><a href="https://consultwithibs.com/" target="_blank" rel="noopener">consultwithibs.com</a></p>
+      </div>
+      <div class="main">
+        <h2>IBS Consulting</h2>
+        <p>The website for IBS Consulting, a university admissions consultancy for African students, which I helped build as an independent contractor. The site includes service pages (MBA and graduate admissions, academic research programs, law school admissions), success stories, consultant profiles, admissions resources and e-books, and consultation and SOP-review forms.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="meta">
+        <p><span class="label">Stack</span>React, Tailwind CSS, Redux, React Query</p>
+        <p><span class="label">Links</span></p>
+        <ul>
+          <li><a href="https://github.com/THEO-184/ui" target="_blank" rel="noopener">My code on GitHub</a></li>
+          <li><a href="https://invoiceninja.com/" target="_blank" rel="noopener">invoiceninja.com</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <h2>Invoice Ninja</h2>
+        <p>An open-source contribution to Invoice Ninja, an invoicing tool for SMEs and freelancers. I built the administration panel UI.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="meta">
+        <p><span class="label">Stack</span>Next.js, TypeScript, React Query, Tailwind CSS, Redux/Zustand, Prisma, PostgreSQL, NextAuth.js</p>
+        <p><span class="label">Link</span><a href="https://tukab2b.com/" target="_blank" rel="noopener">tukab2b.com</a></p>
+      </div>
+      <div class="main">
+        <h2>Tuka</h2>
+        <p>A B2B platform where businesses and clients choose trusted and reputable companies to work with. I worked full-stack on it at Amalitech, using Prisma and PostgreSQL on the backend and implementing authentication and authorization with NextAuth.js.</p>
+        <p class="impact">Connected 50+ businesses monthly and over 5k global professionals.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="meta">
+        <p><span class="label">Stack</span>TypeScript, Node.js, MCP, Claude Code, GitLab CI/CD</p>
+        <p><span class="label">Availability</span>Internal to Monterosa.</p>
+      </div>
+      <div class="main">
+        <h2>AI Tools at Monterosa</h2>
+        <p>Internal AI tooling that automates and speeds up development at Monterosa. I built monterosa-cli and monterosa-mcp, which give developers and AI agents programmatic access to Monterosa services such as the Studio and remove the manual set-up of applications. I contributed to Velocity, the AI build pipeline, and to fankit-ui, the shared UI component library. I also built a dev mode that lets QA testers reproduce bugs and verify fixes through prompts inside the apps, and I documented the 3D apps with the Atlassian MCP and Claude Code.</p>
+        <p class="impact">Used by every team at Monterosa. The dev mode feature saves over 15 hours per week per team across all visualization projects.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Open to frontend and full-stack roles, remote from Accra.</p>
+  </footer>
+</div>
+</body>
+</html>
